@@ -13,6 +13,10 @@ const port = 80
 
 const key = process.env.key
 
+app.get('/', (req, res) => {
+  res.send('Hey this is my API running 🥳')
+})
+
 app.get('/api/store', async (req, res) => {
 // 	let data = await axios.get('https://easydonate.ru/api/v3/shop/products', {
 // 		headers: {
