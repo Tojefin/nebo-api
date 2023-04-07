@@ -3,6 +3,7 @@ const axios = require('axios');
 
 const app = express()
 const PORT = 4000
+const key = process.env.key
 
 app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
