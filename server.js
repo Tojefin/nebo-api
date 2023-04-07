@@ -3,15 +3,15 @@
 // import cors from 'cors'
 
 const express require('express')
-const cors require('cors')
+// const cors require('cors')
 
 const app = express()
 const port = 80
-const key = process.env.key
+// const key = process.env.key
 
-app.use(cors({
-  origin: '*'
-}))
+// app.use(cors({
+//   origin: '*'
+// }))
 
 app.listen(port, () => {
   console.log('Server start')
