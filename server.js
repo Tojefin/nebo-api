@@ -1,15 +1,10 @@
 const express = require('express')
 const fetch require('node-fetch');
-const cors require('cors')
 
 const app = express()
 const PORT = 4000
 
 const key = process.env['key']
-
-app.use(cors({
-  origin: '*'
-}))
 
 app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
