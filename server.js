@@ -2,24 +2,19 @@
 // // import express from 'express'
 // // import cors from 'cors'
 
-// const express require('express')
-// // const cors require('cors')
+const express require('express')
+const cors require('cors')
 
-// const app = express()
-// const port = 80
+const app = express()
+
+app.listen(port, () => {
+  console.log('Server start')
+})
 // // const key = process.env.key
 
 // // app.use(cors({
 // //   origin: '*'
 // // }))
-
-// app.listen(port, () => {
-//   console.log('Server start')
-// })
-
-// app.get('/', (req, res) => {
-//   res.send('Hey this is my API running 🥳')
-// })
 
 // // app.get('/api/store', async (req, res) => {
 // // // 	let data = await axios.get('https://easydonate.ru/api/v3/shop/products', {
@@ -54,27 +49,9 @@
 
 
 // // export default app
-// module.exports = app
-
-
-
-
-
-const express = require('express')
-
-const app = express()
-const PORT = 4000
-
-app.listen(PORT, () => {
-  console.log(`API listening on PORT ${PORT} `)
-})
 
 app.get('/', (req, res) => {
   res.send('Hey this is my API running 🥳')
-})
-
-app.get('/about', (req, res) => {
-  res.send('This is my about route..... ')
 })
 
 // Export the Express API
