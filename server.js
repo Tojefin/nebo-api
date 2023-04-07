@@ -6,14 +6,15 @@ const express require('express')
 // const cors require('cors')
 
 const app = express()
-const port = 80
 // // const key = process.env.key
 
 // // app.use(cors({
 // //   origin: '*'
 // // }))
-app.listen(port, () => {
-  console.log('Server start')
+const PORT = 4000
+
+app.listen(PORT, () => {
+  console.log(`API listening on PORT ${PORT} `)
 })
 
 // // app.get('/api/store', async (req, res) => {
