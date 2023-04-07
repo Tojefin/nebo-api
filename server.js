@@ -43,3 +43,5 @@ app.get('/api/payment', async (req, res) => {
 app.listen(port, () => {
   console.log('Server start')
 })
+
+module.exports = app;
