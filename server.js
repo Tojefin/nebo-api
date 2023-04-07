@@ -1,7 +1,7 @@
-import fetch from 'node-fetch';
-import express from 'express'
-import cors from 'cors'
-import path from 'path';
+var fetch require('node-fetch');
+var express require('express')
+var cors require('cors')
+var path require('path');
 
 const app = express()
 app.use(cors({
@@ -44,4 +44,4 @@ app.listen(port, () => {
   console.log('Server start')
 })
 
-export default app
+module.exports = app
