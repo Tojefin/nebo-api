@@ -28,7 +28,7 @@ app.get('/api/store', async (req, res) => {
 // 		}
 // 	})
 // 	let json = await data.json()
-// 	let editJson = []
+	let editJson = []
 // 	json.response.forEach((item) => {
 // 		editJson.push({id: item.id, server_id: item.servers[0].id, name: item.name, price: item.price})
 // 	})
@@ -48,7 +48,8 @@ app.get('/api/payment', async (req, res) => {
 
 // 	let json = await data.json()
 	// 	console.log(data)
-  res.json(json.response.url);
+//   res.json(json.response.url);
+	res.json([]);
 });
 
 
