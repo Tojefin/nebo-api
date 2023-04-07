@@ -6,15 +6,15 @@ const express require('express')
 const cors require('cors')
 
 const app = express()
-
-app.listen(port, () => {
-  console.log('Server start')
-})
+const port = 80
 // // const key = process.env.key
 
 // // app.use(cors({
 // //   origin: '*'
 // // }))
+app.listen(port, () => {
+  console.log('Server start')
+})
 
 // // app.get('/api/store', async (req, res) => {
 // // // 	let data = await axios.get('https://easydonate.ru/api/v3/shop/products', {
