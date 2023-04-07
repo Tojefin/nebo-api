@@ -4,7 +4,7 @@ const fetch require('node-fetch');
 const app = express()
 const PORT = 4000
 
-const key = process.env['key']
+const key = process.env.key
 
 app.listen(PORT, () => {
   console.log(`API listening on PORT ${PORT} `)
