@@ -29,7 +29,7 @@ app.get('/api/store', async (req, res) => {
   res.json(editJson);
 });
 
-// ?customer=Tojefin&server_id=50111&products={"389102":1}
+// ?customer=Tojefin&server_id=50111&products={"389102":1}&coupon=1%
 app.get('/api/payment', async (req, res) => {
 	let {customer, server_id, products, coupon} = req.query
 	
@@ -41,10 +41,6 @@ app.get('/api/payment', async (req, res) => {
 
   res.json(data.response.url);
 });
-
-app.listen(port, () => {
-  console.log('Server start')
-})
 
 // Export the Express API
 module.exports = app
